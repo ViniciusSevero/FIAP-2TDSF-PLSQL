@@ -1,0 +1,13 @@
+SET SERVEROUTPUT ON
+declare 
+  v_val TB_TESTE.VAL%TYPE;
+begin
+  SELECT VAL
+  INTO v_val
+  FROM TB_TESTE
+  WHERE VAL = 1;
+  
+  DBMS_OUTPUT.put_line(v_val);
+end;
+/
+SET SERVEROUTPUT OFF
